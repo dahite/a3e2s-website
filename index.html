@@ -984,6 +984,14 @@
       .formation-card { padding: 24px; }
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGXVXZH7X4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGXVXZH7X4');
+  </script>
 </head>
 <body>
 <noscript><!-- Google Tag Manager (noscript) -->
@@ -1420,33 +1428,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
       </div>
       <div class="reveal">
-        <form onsubmit="handleSubmit(event)">
+        <form id="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="nom">Nom complet</label>
-              <input class="form-input" type="text" id="nom" placeholder="Votre nom" required />
+              <input class="form-input" type="text" id="nom" name="nom" placeholder="Votre nom" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="org">Société</label>
-              <input class="form-input" type="text" id="org" placeholder="Votre organisation" />
+              <input class="form-input" type="text" id="org" name="org" placeholder="Votre organisation" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="email">Email</label>
-              <input class="form-input" type="email" id="email" placeholder="votre@email.com" required />
+              <input class="form-input" type="email" id="email" name="email" placeholder="votre@email.com" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="tel">Téléphone</label>
-              <input class="form-input" type="tel" id="tel" placeholder="+212 ..." />
+              <input class="form-input" type="tel" id="tel" name="tel" placeholder="+212 ..." />
             </div>
           </div>
           <div class="form-group">
             <label class="form-label" for="msg">Message</label>
-            <textarea class="form-textarea" id="msg" placeholder="Décrivez votre besoin ou votre situation..."></textarea>
+            <textarea class="form-textarea" id="msg" name="message" placeholder="Décrivez votre besoin ou votre situation..."></textarea>
           </div>
-          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">ENVOYER MA DEMANDE</button>
-          <p class="form-note">Réponse garantie sous 24h. Informations traitées de manière strictement confidentielle.</p>
+          <button type="submit" id="submit-btn" class="btn btn-gold" style="width:100%;justify-content:center;">ENVOYER MA DEMANDE</button>
+          <p class="form-note" id="form-note">Réponse garantie sous 24h. Informations traitées de manière strictement confidentielle.</p>
         </form>
       </div>
     </div>
@@ -1595,15 +1603,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     btn.childNodes[0].nodeValue = isOpen ? 'Lire la suite' : 'Réduire';
   }
 
-  // ── Form submit ──
-  function handleSubmit(e) {
+  // ── Form submit — Formspree ──
+  async function handleSubmit(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.textContent = '✓ MESSAGE ENVOYÉ — RÉPONSE SOUS 24H';
-    btn.style.background = '#1a5c1e';
-    btn.style.borderColor = '#1a5c1e';
-    btn.style.color = '#fff';
+    const form = e.target;
+    const btn = document.getElementById('submit-btn');
+    const note = document.getElementById('form-note');
+    btn.textContent = 'ENVOI EN COURS...';
     btn.disabled = true;
+    try {
+      const res = await fetch('https://formspree.io/f/xbdwragr', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        btn.textContent = '✓ MESSAGE ENVOYÉ — RÉPONSE SOUS 24H';
+        btn.style.background = '#1a5c1e';
+        btn.style.borderColor = '#1a5c1e';
+        btn.style.color = '#fff';
+        note.textContent = 'Votre message a bien été reçu. Josselin vous répondra dans les 24 heures.';
+        form.reset();
+      } else {
+        btn.textContent = 'ERREUR — RÉESSAYEZ';
+        btn.style.background = '#8B0000';
+        btn.style.borderColor = '#8B0000';
+        btn.style.color = '#fff';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = 'ERREUR — RÉESSAYEZ';
+      btn.style.background = '#8B0000';
+      btn.style.borderColor = '#8B0000';
+      btn.style.color = '#fff';
+      btn.disabled = false;
+    }
   }
 
   // ── Active nav link ──
