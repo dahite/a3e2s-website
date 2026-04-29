@@ -358,7 +358,8 @@
     .mobile-close {
       position: absolute; top: 1.5rem; right: 2rem;
       background: none; border: none;
-      color: var(--text-muted); font-size: 2rem;
+      color: var(--navy); font-size: 2rem; cursor: pointer;
+      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
     }
 
     /* ── HERO ── */
@@ -1024,7 +1025,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <a href="#formations" onclick="closeMobileMenu()">Formations</a>
   <a href="#fondateur" onclick="closeMobileMenu()">Fondateur</a>
   <a href="#clients" onclick="closeMobileMenu()">Références</a>
+  <a href="/blog" onclick="closeMobileMenu()">Blog</a>
   <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="#contact" onclick="closeMobileMenu()" class="btn btn-gold" style="margin-top:1rem;font-size:13px;">Demander un Audit</a>
 </div>
 
 <!-- NAV -->
