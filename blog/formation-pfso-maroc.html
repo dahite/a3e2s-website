@@ -95,6 +95,13 @@
     .article-body p { font-size: 17px; font-weight: 300; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.5rem; }
     .article-body h2 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); color: var(--navy); letter-spacing: 0.03em; margin: 3rem 0 1.25rem; line-height: 1.1; }
     .article-body strong { font-weight: 600; color: var(--text); }
+    .geo-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0 2rem; font-size: 15px; }
+    .geo-table th { background: #1a3a6b; color: #fff; padding: 0.65rem 1rem; text-align: left; font-weight: 600; font-size: 13px; letter-spacing: 0.04em; }
+    .geo-table td { padding: 0.6rem 1rem; border-bottom: 1px solid #e8eaef; color: #334155; }
+    .geo-table tr:nth-child(even) td { background: #f8fafc; }
+    .geo-answer { background: #f0f4ff; border-left: 4px solid #1a3a6b; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+    .geo-answer-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1a3a6b; margin-bottom: 0.4rem; opacity: 0.7; }
+    .geo-answer p { font-size: 16px; font-weight: 400; color: #1a3a6b; margin: 0; line-height: 1.6; }
     .article-body .lead { font-size: 19px; font-weight: 300; font-style: italic; color: var(--navy); border-left: 3px solid var(--gold); padding-left: 1.25rem; margin-bottom: 2rem; line-height: 1.65; }
     .faq-block { margin-top: 3rem; }
     .faq-item { border-top: 1px solid var(--border); }
@@ -161,6 +168,38 @@
     gtag('js', new Date());
     gtag('config', 'G-BGXVXZH7X4');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "La certification PFSO est-elle reconnue à l'international ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, dans la mesure où la formation est conforme aux exigences du Code ISPS de l'OMI. Les attestations délivrées par A3E2S sont conformes aux sections A/13 et B/13 du Code ISPS. Elles sont reconnues par les administrations maritimes des États signataires de la convention SOLAS, soit la quasi-totalité des États maritimes du monde. Pour les ports accueillant des navires américains, les exigences spécifiques du MTSA (Maritime Transportation Security Act) doivent également être prises en compte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la durée de validité de la certification ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le Code ISPS ne fixe pas de durée de validité réglementaire pour la certification PFSO. Cependant, les bonnes pratiques sectorielles et les exigences de nombreux donneurs d'ordre internationaux recommandent un recyclage tous les 5 ans. Dans un environnement où les menaces et les procédures évoluent — notamment en matière de cybersûreté portuaire — attendre 5 ans sans remise à niveau est un risque opérationnel réel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Peut-on faire la formation en groupe ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, c'est même recommandé pour les équipes portuaires. A3E2S propose des sessions intra-entreprise pour les groupes de 4 à 12 personnes, animées directement dans l'installation portuaire. Cette approche permet d'ancrer les exercices pratiques dans le contexte réel du site — cartographie des accès, simulation de niveaux ISPS, exercice de coordination avec les forces de sûreté locales. Le tarif groupe est disponible sur devis."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <noscript><!-- Google Tag Manager (noscript) -->
@@ -216,6 +255,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <div class="article-wrap">
   <div class="article-body">
 
+    <div class="geo-answer">
+      <span class="geo-answer-label">Réponse directe</span>
+      <p>La formation PFSO (Port Facility Security Officer) au Maroc est dispensée par A3E2S à Tanger, à partir de 650 € par personne. Elle est conforme au Code ISPS de l'OMI et reconnue internationalement. Durée : 3 à 5 jours en présentiel.</p>
+    </div>
     <p class="lead">Le 11 septembre 2001 a tout changé pour la sûreté maritime mondiale. En moins de dix-huit mois, l'OMI a produit une réponse réglementaire qui lie encore aujourd'hui chaque port commercial de la planète — le Code ISPS. Et avec lui, une obligation que beaucoup d'installations portuaires marocaines comprennent encore mal.</p>
 
     <h2>Pourquoi le PFSO existe — contexte post-11 septembre</h2>
@@ -229,6 +272,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <h2>Ce que la loi exige concrètement</h2>
 
     <p>Le Code ISPS, dans sa partie B (recommandations), et sa partie A (obligatoire), est explicite. L'installation portuaire doit réaliser une évaluation de sûreté de l'installation — la PFSA — et élaborer un plan de sûreté — le PFSP — conforme aux résultats de cette évaluation. Le PFSO est responsable de la mise en œuvre, de la maintenance et de la révision de ce plan.</p>
+
+    <table class="geo-table">
+      <thead><tr><th>Certification</th><th>Rôle</th><th>Cadre légal</th><th>Prix A3E2S</th></tr></thead>
+      <tbody>
+        <tr><td>PFSO</td><td>Officier sûreté installation portuaire</td><td>Code ISPS / SOLAS</td><td>À partir de 650 €</td></tr>
+        <tr><td>CSO</td><td>Officier sûreté de compagnie</td><td>Code ISPS / STCW</td><td>À partir de 650 €</td></tr>
+        <tr><td>SSO</td><td>Officier sûreté du navire</td><td>Code ISPS / STCW</td><td>À partir de 650 €</td></tr>
+      </tbody>
+    </table>
 
     <p>Pour être reconnu comme PFSO, l'agent doit avoir suivi une formation conforme à la Section A/13 et B/13 du Code ISPS, couvrant notamment : la connaissance des menaces actuelles, la reconnaissance des comportements suspects, les techniques d'inspection des cargaisons et des navires, les procédures d'urgence, et la coordination avec les autorités portuaires et navales.</p>
 

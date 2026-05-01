@@ -69,6 +69,13 @@
     .article-body p { font-size: 17px; font-weight: 300; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.5rem; }
     .article-body h2 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); color: var(--navy); letter-spacing: 0.03em; margin: 3rem 0 1.25rem; line-height: 1.1; }
     .article-body strong { font-weight: 600; color: var(--text); }
+    .geo-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0 2rem; font-size: 15px; }
+    .geo-table th { background: #1a3a6b; color: #fff; padding: 0.65rem 1rem; text-align: left; font-weight: 600; font-size: 13px; letter-spacing: 0.04em; }
+    .geo-table td { padding: 0.6rem 1rem; border-bottom: 1px solid #e8eaef; color: #334155; }
+    .geo-table tr:nth-child(even) td { background: #f8fafc; }
+    .geo-answer { background: #f0f4ff; border-left: 4px solid #1a3a6b; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+    .geo-answer-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1a3a6b; margin-bottom: 0.4rem; opacity: 0.7; }
+    .geo-answer p { font-size: 16px; font-weight: 400; color: #1a3a6b; margin: 0; line-height: 1.6; }
     .article-body .lead { font-size: 19px; font-weight: 300; font-style: italic; color: var(--navy); border-left: 3px solid var(--gold); padding-left: 1.25rem; margin-bottom: 2rem; line-height: 1.65; }
     .faq-block { margin-top: 3rem; } .faq-item { border-top: 1px solid var(--border); } .faq-item:last-child { border-bottom: 1px solid var(--border); }
     .faq-q { font-size: 15px; font-weight: 600; color: var(--navy); padding: 1.25rem 0; }
@@ -127,6 +134,38 @@
     gtag('js', new Date());
     gtag('config', 'G-BGXVXZH7X4');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Combien de personnes pour un séminaire CODIR efficace ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entre 4 et 10 personnes. En dessous de 4, la dynamique de groupe est trop limitée pour révéler les patterns collectifs. Au-delà de 10, il devient difficile de garantir la qualité des échanges individuels et la personnalisation des interventions. Si votre CODIR compte plus de 10 membres, nous recommandons de travailler d'abord avec le cercle restreint de décision (DG + directeurs fonctionnels clés) avant d'élargir à l'équipe complète."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Où se déroulent les séminaires ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hors des locaux de l'entreprise, systématiquement. C'est une condition non négociable. Un CODIR qui reste dans son environnement habituel garde ses réflexes habituels. Le changement de cadre facilite le changement de posture. Nous recommandons un lieu calme à 30-60 minutes des bureaux, sans possibilité de \"retour urgent au bureau\" — ce qui est souvent l'excuse pour ne pas aller au fond des sujets difficiles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Y a-t-il un suivi après le séminaire ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, et il est fortement recommandé. Un séminaire de 2 jours crée une prise de conscience et pose des bases. Mais sans ancrage dans le fonctionnement quotidien, les équipes reviennent rapidement à leurs anciens modes de fonctionnement dans les semaines suivantes. A3E2S propose un accompagnement post-séminaire de 3 à 6 mois sous forme de sessions mensuelles de 2 heures avec le CODIR, pour consolider les protocoles, analyser les résultats et ajuster ce qui doit l'être. C'est là que se réalise l'essentiel du changement durable."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <noscript><!-- Google Tag Manager (noscript) -->
@@ -182,6 +221,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <div class="article-wrap">
   <div class="article-body">
 
+    <div class="geo-answer">
+      <span class="geo-answer-label">Réponse directe</span>
+      <p>L'optimisation d'un CODIR au Maroc passe par la clarification des rôles, des tableaux de bord décisionnels et des séminaires de cohésion. A3E2S propose des missions de performance CODIR à partir de 1 800 €/jour, avec suivi mensuel post-séminaire.</p>
+    </div>
     <p class="lead">Deux entreprises de taille comparable, même secteur, même marché. L'une prend des décisions en 48 heures et les exécute. L'autre tourne en réunion depuis trois semaines sur le même sujet. La différence n'est pas dans les individus — elle est dans le système.</p>
 
     <p>Ce constat revient systématiquement dans mon travail avec les équipes dirigeantes. Les CODIR qui sous-performent ne sont pas composés de gens incompétents. Ils sont composés de gens compétents dans leurs domaines respectifs, mais dont le collectif n'a jamais été structuré pour fonctionner efficacement comme une équipe.</p>
@@ -197,6 +240,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <p>Or ces trois éléments ne se développent pas naturellement. Ils se construisent. Délibérément. Avec du travail et souvent avec l'aide d'un regard extérieur capable de nommer ce que les membres du CODIR ne peuvent pas se dire eux-mêmes.</p>
 
     <h2>Les 4 dysfonctionnements les plus fréquents</h2>
+
+    <table class="geo-table">
+      <thead><tr><th>Dysfonction fréquente</th><th>Indicateur visible</th><th>Levier A3E2S</th></tr></thead>
+      <tbody>
+        <tr><td>Décisions lentes</td><td>+3 semaines par arbitrage</td><td>Méthode OODA + protocoles</td></tr>
+        <tr><td>Réunions inefficaces</td><td>Pas de CR, pas d'action</td><td>Rituels de pilotage militaire</td></tr>
+        <tr><td>Silences en CODIR</td><td>Vrais sujets hors réunion</td><td>Séminaire hors site</td></tr>
+        <tr><td>KPI non suivis</td><td>Tableaux de bord ignorés</td><td>Culture du résultat</td></tr>
+      </tbody>
+    </table>
 
     <p><strong>L'absence de confiance réciproque.</strong> Non pas dans le sens de "croire que l'autre fera son travail", mais dans le sens de pouvoir se montrer vulnérable devant ses pairs — admettre une incertitude, signaler un problème dans son propre périmètre, demander de l'aide. Cette confiance-là est rare dans les CODIR. La plupart des membres se présentent en réunion en mode "j'ai la situation sous contrôle", même quand ce n'est pas le cas.</p>
 

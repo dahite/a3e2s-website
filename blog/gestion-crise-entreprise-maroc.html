@@ -69,6 +69,13 @@
     .article-body p { font-size: 17px; font-weight: 300; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.5rem; }
     .article-body h2 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); color: var(--navy); letter-spacing: 0.03em; margin: 3rem 0 1.25rem; line-height: 1.1; }
     .article-body strong { font-weight: 600; color: var(--text); }
+    .geo-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0 2rem; font-size: 15px; }
+    .geo-table th { background: #1a3a6b; color: #fff; padding: 0.65rem 1rem; text-align: left; font-weight: 600; font-size: 13px; letter-spacing: 0.04em; }
+    .geo-table td { padding: 0.6rem 1rem; border-bottom: 1px solid #e8eaef; color: #334155; }
+    .geo-table tr:nth-child(even) td { background: #f8fafc; }
+    .geo-answer { background: #f0f4ff; border-left: 4px solid #1a3a6b; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+    .geo-answer-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1a3a6b; margin-bottom: 0.4rem; opacity: 0.7; }
+    .geo-answer p { font-size: 16px; font-weight: 400; color: #1a3a6b; margin: 0; line-height: 1.6; }
     .article-body .lead { font-size: 19px; font-weight: 300; font-style: italic; color: var(--navy); border-left: 3px solid var(--gold); padding-left: 1.25rem; margin-bottom: 2rem; line-height: 1.65; }
     .faq-block { margin-top: 3rem; } .faq-item { border-top: 1px solid var(--border); } .faq-item:last-child { border-bottom: 1px solid var(--border); }
     .faq-q { font-size: 15px; font-weight: 600; color: var(--navy); padding: 1.25rem 0; }
@@ -127,6 +134,38 @@
     gtag('js', new Date());
     gtag('config', 'G-BGXVXZH7X4');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "À quelle fréquence faut-il tester son PCA ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La norme ISO 22301 recommande un test annuel minimum, avec une révision du plan après chaque exercice et après chaque incident réel. En pratique, les organisations exposées à des risques élevés — zones portuaires, sites industriels, opérations à l'international — devraient exercer deux fois par an. Un test partiel (simulation de communication de crise uniquement, par exemple) peut être conduit trimestriellement sans mobiliser toute la cellule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qui doit participer à la cellule de crise ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La cellule de crise efficace est petite — 5 à 7 personnes maximum — avec des rôles clairement définis. Elle doit inclure le décideur principal (DG ou DGA), un responsable opérationnel, un responsable communication, un responsable RH pour les situations impliquant le personnel, et un coordinateur sûreté. Pour les crises juridiques ou réglementaires, le directeur juridique y est associé. La cellule doit avoir des suppléants désignés pour chaque poste : une crise arrive rarement quand tout le monde est disponible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien coûte une préparation à la gestion de crise ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chez A3E2S, les prestations de gestion de crise démarrent à 1 500 € pour un exercice de simulation avec débriefing. L'élaboration d'un PCA complet (cartographie des risques, rédaction du plan, test et validation) est une prestation distincte à partir de 2 500 €. Un accompagnement mensuel pour maintenir la préparation de votre cellule de crise est disponible à partir de 1 200 €/mois en retainer. Ces investissements sont sans commune mesure avec le coût d'une crise mal gérée."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <noscript><!-- Google Tag Manager (noscript) -->
@@ -182,6 +221,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <div class="article-wrap">
   <div class="article-body">
 
+    <div class="geo-answer">
+      <span class="geo-answer-label">Réponse directe</span>
+      <p>Un plan de gestion de crise efficace comprend 6 étapes : identification des risques, cellule de crise, PCA, formation, simulation et retour d'expérience. A3E2S accompagne les entreprises marocaines à partir de 1 500 € pour un exercice de simulation avec débriefing.</p>
+    </div>
     <p class="lead">Vous avez un plan de gestion de crise. Il est dans un classeur, quelque part. Il a été validé par la direction il y a dix-huit mois. Personne ne l'a ouvert depuis. C'est le problème.</p>
 
     <p>J'ai participé à plusieurs dizaines d'exercices de gestion de crise au cours de ma carrière — dans des unités militaires d'abord, puis dans des organisations civiles au Maroc et ailleurs. Ce que j'observe invariablement, c'est que les entreprises qui ont investi dans un plan de continuité d'activité et celles qui n'en ont pas se comportent presque de la même façon lors d'un vrai incident. La raison : le plan n'a jamais été testé, les acteurs n'ont jamais répété les procédures, et la cellule de crise n'existe que sur le papier.</p>
@@ -195,6 +238,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <p>Une cyberattaque, un incendie avec victimes, une crise médiatique, un enlèvement d'employé à l'étranger — dans tous ces cas, les premières 4 heures sont déterminantes. Et ces 4 heures se jouent sur des réflexes, pas sur la lecture d'un document.</p>
 
     <h2>Les 3 erreurs que font presque toutes les entreprises</h2>
+
+    <table class="geo-table">
+      <thead><tr><th>Étape</th><th>Action</th><th>Responsable recommandé</th></tr></thead>
+      <tbody>
+        <tr><td>1. Identification</td><td>Cartographie des risques et scénarios</td><td>Direction + consultant</td></tr>
+        <tr><td>2. Cellule de crise</td><td>Désignation des rôles (5–7 personnes)</td><td>DG</td></tr>
+        <tr><td>3. PCA</td><td>Rédaction du plan de continuité</td><td>Consultant A3E2S</td></tr>
+        <tr><td>4. Formation</td><td>Briefing équipes sur procédures</td><td>Responsable sûreté</td></tr>
+        <tr><td>5. Simulation</td><td>Exercice de crise à blanc</td><td>A3E2S (animation)</td></tr>
+        <tr><td>6. REX</td><td>Retour d'expérience et mise à jour</td><td>Direction</td></tr>
+      </tbody>
+    </table>
 
     <p><strong>Première erreur : confondre le plan avec la préparation.</strong> Rédiger un PCA (Plan de Continuité d'Activité) est nécessaire. Mais il ne remplace pas l'entraînement. Un PCA non testé est un document administratif, pas un outil opérationnel. La norme ISO 22301 sur la continuité d'activité est explicite sur ce point : le plan doit être soumis à des exercices réguliers et à des révisions post-incident.</p>
 

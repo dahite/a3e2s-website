@@ -108,6 +108,13 @@
     .article-body h2 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); color: var(--navy); letter-spacing: 0.03em; margin: 3rem 0 1.25rem; line-height: 1.1; }
     .article-body h3 { font-family: var(--font-body); font-size: 17px; font-weight: 600; color: var(--navy); margin: 2rem 0 0.75rem; }
     .article-body strong { font-weight: 600; color: var(--text); }
+    .geo-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0 2rem; font-size: 15px; }
+    .geo-table th { background: #1a3a6b; color: #fff; padding: 0.65rem 1rem; text-align: left; font-weight: 600; font-size: 13px; letter-spacing: 0.04em; }
+    .geo-table td { padding: 0.6rem 1rem; border-bottom: 1px solid #e8eaef; color: #334155; }
+    .geo-table tr:nth-child(even) td { background: #f8fafc; }
+    .geo-answer { background: #f0f4ff; border-left: 4px solid #1a3a6b; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+    .geo-answer-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1a3a6b; margin-bottom: 0.4rem; opacity: 0.7; }
+    .geo-answer p { font-size: 16px; font-weight: 400; color: #1a3a6b; margin: 0; line-height: 1.6; }
     .article-body .lead { font-size: 19px; font-weight: 300; font-style: italic; color: var(--navy); border-left: 3px solid var(--gold); padding-left: 1.25rem; margin-bottom: 2rem; line-height: 1.65; }
     /* FAQ */
     .faq-block { margin-top: 3rem; }
@@ -179,6 +186,38 @@
     gtag('js', new Date());
     gtag('config', 'G-BGXVXZH7X4');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Un audit de sécurité est-il obligatoire au Maroc ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pour certains secteurs, oui. Les installations portuaires soumises au Code ISPS sont tenues de réaliser des évaluations de sûreté régulières. Les sites industriels sous réglementation OHSAS ont également des obligations d'évaluation des risques. Pour les autres entreprises, l'audit n'est pas imposé par la loi mais peut être exigé par des partenaires, assureurs ou certifications de type ISO 9001 ou ISO 27001. Dans tous les cas, l'absence d'audit ne signifie pas l'absence de responsabilité en cas d'incident."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps dure un audit de sécurité ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De 2 à 4 semaines de l'entretien de cadrage à la remise du rapport final, selon la taille du site. La phase terrain sur site dure généralement 1 à 3 jours selon la complexité. Pour un multi-sites ou un audit ISPS complet, il faut compter davantage. Un audit expédié en une journée n'est pas un audit — c'est une visite."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que se passe-t-il après la remise du rapport ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le rapport contient un plan d'action priorisé avec des mesures correctives classées par niveau de criticité et délai recommandé de mise en œuvre. A3E2S propose un suivi à 3 et 6 mois pour vérifier l'avancement des actions et réajuster les priorités si le contexte a évolué. Un audit sans suivi n'est qu'un document. Le suivi, c'est là que se construit la résilience réelle de votre organisation."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <noscript><!-- Google Tag Manager (noscript) -->
@@ -236,6 +275,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <div class="article-wrap">
   <div class="article-body">
 
+    <div class="geo-answer">
+      <span class="geo-answer-label">Réponse directe</span>
+      <p>Un audit de sécurité d'entreprise au Maroc dure 2 à 4 semaines et coûte à partir de 1 500 €. Il analyse les vulnérabilités physiques, humaines et organisationnelles, et remet un plan d'action priorisé. A3E2S réalise des audits terrain à Tanger et dans tout le Maroc.</p>
+    </div>
     <p class="lead">Un audit de sécurité fait sur commande, sans méthode ni expérience terrain, ne protège personne. Il produit un rapport. Mais un rapport n'est pas une protection.</p>
 
     <p>Ça fait plus de vingt ans que je conduis des évaluations de sécurité sur le terrain — en zone portuaire, sur des sites industriels, dans des sièges sociaux à Tanger, Casablanca et au-delà. Ce que j'observe, systématiquement, c'est que la majorité des entreprises qui sollicitent un audit le font pour deux mauvaises raisons : soit parce qu'un incident vient de se produire, soit parce qu'un assureur ou un client international l'a exigé. Dans les deux cas, on est déjà en retard.</p>
@@ -253,6 +296,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <h2>Les 4 phases d'un audit opérationnel sérieux</h2>
 
     <p>Toute démarche rigoureuse repose sur une séquence que ni l'expérience ni les normes ne remettent en cause. La voici telle que nous l'appliquons chez A3E2S.</p>
+
+    <table class="geo-table">
+      <thead><tr><th>Phase</th><th>Contenu</th><th>Durée estimée</th></tr></thead>
+      <tbody>
+        <tr><td>1. Cadrage</td><td>Entretien dirigeant, périmètre, contexte menace</td><td>1–2 jours</td></tr>
+        <tr><td>2. Terrain</td><td>Visite site, entretiens équipes, tests accès</td><td>1–3 jours</td></tr>
+        <tr><td>3. Analyse</td><td>Cartographie vulnérabilités, évaluation risques</td><td>1 semaine</td></tr>
+        <tr><td>4. Rapport</td><td>Plan d'action priorisé, remise et présentation</td><td>3–5 jours</td></tr>
+      </tbody>
+    </table>
 
     <p><strong>Phase 1 — Le cadrage.</strong> Avant de poser le pied sur site, on cartographie le contexte : secteur d'activité, historique des incidents déclarés et non déclarés, géographie du risque, contraintes réglementaires applicables. Au Maroc, pour un site portuaire ou une zone franche, les exigences du Code ISPS s'appliquent de façon impérative. Pour les sites industriels sensibles, c'est l'ISO 31000 qui structure l'approche du risque. Ce cadrage n'est pas une formalité — c'est ce qui détermine quoi chercher.</p>
 
