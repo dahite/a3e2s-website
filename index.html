@@ -19,6 +19,7 @@
   <meta name="author" content="Josselin Albina — A3E2S" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://a3e2s.ma/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <meta name="geo.region" content="MA-01" />
   <meta name="geo.placename" content="Tanger, Maroc" />
   <meta name="geo.position" content="35.7595;-5.8340" />
@@ -37,6 +38,7 @@
   <meta name="twitter:description" content="Audit sécurité dès 1500€. Formation PFSO dès 650€. Séminaire CODIR dès 1800€/jour. Vétéran 24 ans Forces Spéciales. Tanger, Maroc." />
   <title>A3E2S — Cabinet Conseil Sûreté &amp; Sécurité | Tanger, Maroc</title>
 
+  <link rel="preload" as="image" href="tanger-nuit.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
@@ -1551,8 +1553,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     // Progress bar
     const pct = scrollTotal() > 0 ? (sy / scrollTotal() * 100) : 0;
     progressBar.style.width = pct + '%';
-    // Hero parallax: bg moves at 0.4x, max 150px
-    if (heroBg) heroBg.style.transform = 'translateY(' + Math.min(sy * 0.4, 150) + 'px)';
+    // Hero parallax: desktop only (mobile causes jitter)
+    if (heroBg && window.innerWidth > 900) heroBg.style.transform = 'translateY(' + Math.min(sy * 0.4, 150) + 'px)';
   }, {passive: true});
 
   // ── Scroll reveal ──

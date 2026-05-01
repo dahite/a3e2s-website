@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Sitemap: https://a3e2s.ma/sitemap.xml
 
+# LLM crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -13,10 +11,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Amazonbot
+User-agent: GoogleOther
 Allow: /
 
 User-agent: anthropic-ai
@@ -25,5 +20,7 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: GoogleBot
+User-agent: cohere-ai
 Allow: /
+
+Sitemap: https://a3e2s.ma/sitemap.xml

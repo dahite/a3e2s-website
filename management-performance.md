@@ -2,7 +2,7 @@
 title: Management & Performance Sûreté — A3E2S | Tanger, Maroc
 description: A3E2S — Management & Performance Sûreté. La rigueur militaire au service de votre organisation. Diagnostic organisationnel, leadership sous pression, optimisation décisionnelle.
 url: https://a3e2s.ma/management-performance
-last_updated: 2026-04-27
+last_updated: 2026-05-01
 ---
 
 [A3E2S](index.html) › [Services](index.html#services) › Management & Performance

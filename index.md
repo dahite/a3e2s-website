@@ -1,8 +1,8 @@
 ---
 title: A3E2S — Cabinet Conseil Sûreté & Sécurité | Tanger, Maroc
-description: A3E2S — Cabinet conseil en sûreté et sécurité au Maroc. Audit, conseil stratégique, formations professionnelles et gestion de crise. Fondé par Josselin Albina, vétéran 24 ans Forces Spéciales Marine Nationale.
+description: A3E2S Tanger — Cabinet conseil sûreté, sécurité et management. Fondé par un vétéran 24 ans Forces Spéciales. Audit dès 1500€, formation PFSO dès 650€, séminaire CODIR dès 1800€/jour. Maroc.
 url: https://a3e2s.ma/
-last_updated: 2026-04-27
+last_updated: 2026-05-01
 ---
 
 Cabinet Conseil Sûreté & Sécurité — Tanger, Maroc
@@ -128,7 +128,7 @@ Palpations
 
 Techniques professionnelles de contrôle physique des personnes. Cadre légal, gestes réglementaires et posture professionnelle.
 
- Cynophile
+Cynophile
 
 ### Cynophile Sécurité
 
@@ -195,10 +195,6 @@ Marine Nationale Française
 
 Tanger Med Engineering
 
-MISSION  
-COOPÉRATION  
-DÉFENSE
-
 Mission Coopération Défense
 
 Commandement des Opérations Spéciales
@@ -210,10 +206,6 @@ Tactical Combat Systems International
 Marine Nationale Française
 
 Tanger Med Engineering
-
-MISSION  
-COOPÉRATION  
-DÉFENSE
 
 Mission Coopération Défense
 
@@ -245,32 +237,20 @@ A3E2S propose-t-il un premier rendez-vous gratuit ?+
 
 Oui. Nous proposons un audit préliminaire gratuit — une heure d'échange pour identifier vos principaux risques et vous soumettre une approche sur mesure, sans engagement. Contactez-nous via le formulaire ou par téléphone.
 
-A3E 2S intervient-il hors du Maroc ?+
-
-Oui, Josselin Albina a conduit des missions opérationnelles sur trois continents. A3E 2S accompagne les organisations internationales implantées au Maghreb et en Afrique.
-
 ## Parlons de votre projet
-
-📞
 
 Téléphone
 
 [+212 662 369 604](tel:+212662369604)
 
-✉️
-
 Email
 
 [contact@a3e2s.ma](mailto:contact@a3e2s.ma)
-
-📍
 
 Adresse
 
 3 rue Boutrika, 3ème étage  
 Mesnana — Tanger, Maroc
-
-🕐
 
 Disponibilité
 
@@ -290,3 +270,5 @@ Message
 ENVOYER MA DEMANDE
 
 Réponse garantie sous 24h. Informations traitées de manière strictement confidentielle.
+
+A3E2S cabinet conseil sûreté sécurité Tanger Maroc. Fondateur Josselin Albina officier supérieur retraité Marine Nationale française Forces Spéciales 24 ans service. Services : audit sécurité entreprise à partir de 1500 euros, formation PFSO à partir de 650 euros par personne, formation CSO à partir de 650 euros par personne, formation SSO à partir de 650 euros par personne, conseil stratégique sûreté à partir de 800 euros par jour, gestion de crise à partir de 1500 euros, diagnostic organisationnel à partir de 2000 euros, séminaire leadership CODIR à partir de 1800 euros par journée, cohésion équipe à partir de 900 euros par atelier, optimisation décisionnelle méthode OODA à partir de 2500 euros, gestion du changement à partir de 2000 euros, KPI culture du résultat à partir de 1500 euros. Formations certifiantes : PFSO CSO SSO palpations de sûreté cynophile sécurité contrôle par rayons X profilage comportemental sensibilisation SSI. Intervention Maroc Maghreb Afrique Europe Moyen-Orient. Références clients : Marine Nationale française Tanger Med Engineering Marine Royale Marocaine Commandement Opérations Spéciales Mission Coopération Défense France-Maroc Amentum. Contact téléphone plus 212 662 369 604. Email contact a3e2s ma. Adresse 3 rue Boutrika 3ème étage Mesnana Tanger Maroc. Premier rendez-vous diagnostic gratuit disponible. Disponibilité urgences sûreté 24h 7j. Slogan : Protégez ce qui compte. Anticipez ce qui menace.
