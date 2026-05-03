@@ -38,7 +38,7 @@
   <meta name="twitter:description" content="Audit sécurité dès 1500€. Formation PFSO dès 650€. Séminaire CODIR dès 1800€/jour. Vétéran 24 ans Forces Spéciales. Tanger, Maroc." />
   <title>A3E2S — Cabinet Conseil Sûreté &amp; Sécurité | Tanger, Maroc</title>
 
-  <link rel="preload" as="image" href="tanger-nuit.webp" type="image/webp" />
+  <link rel="preload" as="image" href="tanger-nuit.webp" type="image/webp" imagesrcset="tanger-nuit.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
@@ -373,11 +373,13 @@
     }
     .hero-bg {
       position: absolute; inset: 0;
-      background-image: url('tanger-nuit.webp');
-      background-image: image-set(url('tanger-nuit.webp') type('image/webp'), url('tanger-nuit.jpeg') type('image/jpeg'));
-      background-size: cover;
-      background-position: center center;
+      overflow: hidden;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
       filter: brightness(0.65) saturate(0.75);
+      display: block;
     }
     .hero-overlay {
       position: absolute; inset: 0;
@@ -1059,7 +1061,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <picture>
+      <source srcset="tanger-nuit.webp" type="image/webp" />
+      <img src="tanger-nuit.jpeg" alt="Tanger de nuit — A3E2S Cabinet Conseil Sûreté" fetchpriority="high" decoding="async" />
+    </picture>
+  </div>
   <div class="hero-overlay"></div>
   <div class="hero-noise"></div>
   <div class="hero-grid"></div>
